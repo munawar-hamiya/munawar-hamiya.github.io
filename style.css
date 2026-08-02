@@ -61,3 +61,14 @@ p, li {
 a {
     color: #9ecbff;
 }
+
+.degree {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.details {
+    font-size: 0.85rem;
+}
+
+
