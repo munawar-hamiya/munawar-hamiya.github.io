@@ -72,3 +72,18 @@ a {
 }
 
 
+
+nav a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #f2f2f2;
+}
