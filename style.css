@@ -10,39 +10,7 @@ body {
 }
 
 
-.layout {
-    display: flex;
-    gap: 60px;
-}
-
-
-aside {
-    width: 240px;
-    flex-shrink: 0;
-}
-
-
-aside img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-
-aside h1 {
-    font-size: 1.8rem;
-    font-weight: normal;
-    color: #ffffff;
-    margin-top: 20px;
-}
-
-
-aside p {
-    font-size: 0.95rem;
-    color: #d0d0d0;
-}
-
+/* Navigation */
 
 nav {
     display: flex;
@@ -67,13 +35,40 @@ nav a:hover {
 }
 
 
-main {
-    flex: 1;
+
+/* Profile section */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
 }
 
 
+.profile img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+/* Sections */
+
 section {
     margin-bottom: 45px;
+}
+
+
+
+/* Headings */
+
+h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #ffffff;
 }
 
 
@@ -86,17 +81,38 @@ h2 {
 }
 
 
+h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #dddddd;
+    margin-bottom: 5px;
+}
+
+
+
+/* Text */
+
+p, li {
+    color: #d0d0d0;
+}
+
+
 p {
     max-width: 750px;
-    color: #d0d0d0;
     margin-bottom: 1.2rem;
 }
 
+
+
+/* Links */
 
 a {
     color: #9ecbff;
 }
 
+
+
+/* CV formatting */
 
 .degree {
     font-size: 1rem;
@@ -109,15 +125,37 @@ a {
 }
 
 
+
+/* Lists */
+
+ul {
+    color: #d0d0d0;
+}
+
+
+
+/* Mobile */
+
 @media (max-width: 700px) {
 
-    .layout {
+    body {
+        padding: 25px 20px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+
+    .profile {
         display: block;
     }
 
-    aside {
-        width: auto;
-        margin-bottom: 40px;
+
+    .profile img {
+        margin-bottom: 25px;
     }
 
 }
